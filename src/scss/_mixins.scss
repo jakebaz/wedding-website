@@ -1,0 +1,54 @@
+@mixin min-width ($breakpoint) { //the name of the mixin is devices
+  
+  @if $breakpoint == sm {    
+    @media only screen and (min-width: 480px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == md {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == md {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == lg {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+@mixin hide-visually {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+  transition: 300ms;
+}
+
+@mixin show-visually {
+  position: unset;
+  clip: unset;
+  overflow: unset;
+  height: unset;
+  width: unset;
+  word-wrap: unset;
+}
+
+@mixin icon {
+  width: 24px;
+  height: 24px;
+}
+
+@mixin uppercase {
+  text-transform: uppercase;
+}

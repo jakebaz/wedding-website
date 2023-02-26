@@ -1,30 +1,36 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <DefaultLayout>
+    <WelcomeSection />
+    <FoodAndDrink />
+    <LocationDetails />
+    <ContactUs />
+    <ScheduleOfEvents />
+  </DefaultLayout>
 </template>
-
+<script setup>
+import DefaultLayout from "@/layouts/DefaultLayout.vue";
+import WelcomeSection from "@/views/WelomeSection.vue";
+import FoodAndDrink from "@/views/FoodAndDrink.vue";
+import LocationDetails from "@/views/LocationDetails.vue";
+import ContactUs from "@/views/ContactUs.vue";
+import ScheduleOfEvents from "@/views/ScheduleOfEvents.vue";
+</script>
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import "./scss/variables";
+* {
+  box-sizing: border-box;
 }
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+html,
+body,
+#app {
+  max-width: 100vw;
+  overflow-x: unset;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Libre Baskerville", serif;
+  color: $text-primary;
 }
 </style>
