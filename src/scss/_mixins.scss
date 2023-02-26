@@ -52,3 +52,8 @@
 @mixin uppercase {
   text-transform: uppercase;
 }
+
+@mixin container {
+  max-width: 1020px;
+  margin: 24px 12px;
+}

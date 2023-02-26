@@ -18,6 +18,7 @@ import ScheduleOfEvents from "@/views/ScheduleOfEvents.vue";
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import "./scss/variables";
+@import "./scss/mixins";
 * {
   box-sizing: border-box;
 }
@@ -32,5 +33,6 @@ body {
   margin: 0;
   font-family: "Libre Baskerville", serif;
   color: $text-primary;
+  background: $primary;
 }
 </style>

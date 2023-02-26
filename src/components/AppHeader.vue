@@ -20,10 +20,10 @@ import AppNav from "@/components/AppNav.vue";
   align-items: center;
   padding-left: 12px;
   padding-right: 12px;
-  background: $primary;
   overflow: hidden;
   .title {
     @include uppercase;
+    margin: 24px 0;
   }
 }
 </style>
