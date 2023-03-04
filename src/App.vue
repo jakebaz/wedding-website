@@ -16,7 +16,7 @@ import ContactUs from "@/views/ContactUs.vue";
 import ScheduleOfEvents from "@/views/ScheduleOfEvents.vue";
 </script>
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import "./scss/fonts";
 @import "./scss/variables";
 @import "./scss/mixins";
 * {
@@ -31,7 +31,7 @@ body,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Libre Baskerville", serif;
+  font-family: $primary-font;
   color: $text-primary;
   background: $primary;
 }

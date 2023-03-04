@@ -15,6 +15,12 @@
           <span>Jake</span>
         </h1>
       </div>
+      <div class="date">
+        <p>October 5th, 2024</p>
+      </div>
+      <div class="rsvp-date">
+        <p>RSVP By ...</p>
+      </div>
     </div>
   </div>
 </template>
@@ -70,6 +76,23 @@
           font-size: $text-sm;
         }
       }
+    }
+    .date {
+      @include uppercase;
+      font-family: $secondary-font;
+      letter-spacing: $title-spacing;
+      font-weight: 300;
+      text-align: center;
+      margin: 60px 0;
+    }
+    .rsvp-date {
+      font-family: $secondary-font;
+      font-weight: 400;
+      margin: auto;
+      padding: 12px;
+      border: solid 1px $text-primary;
+      text-align: center;
+      max-width: 440px;
     }
   }
 }
