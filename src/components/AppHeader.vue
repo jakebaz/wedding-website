@@ -24,6 +24,8 @@ import AppNav from "@/components/AppNav.vue";
   .title {
     @include uppercase;
     margin: 24px 0;
+    letter-spacing: $title-spacing;
+    font-size: $text-md;
   }
 }
 </style>

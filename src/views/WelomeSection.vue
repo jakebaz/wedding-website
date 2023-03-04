@@ -43,6 +43,8 @@
       .title {
         width: 100%;
         margin: auto;
+        letter-spacing: $title-spacing;
+        font-size: $text-lg;
       }
       .break {
         position: relative;
@@ -62,6 +64,10 @@
           &__right {
             right: 0;
           }
+        }
+        .and {
+          font-style: italic;
+          font-size: $text-sm;
         }
       }
     }
